@@ -12,15 +12,23 @@
 	clip: rect(0 0 0 0);
 }
 
-.body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
+.container-medium {
+	max-width: $desctope-width-medium;
+	margin: 0 auto;
+}
 
-	background-color: #FFFFFF;
-	gap: 10px;
+.container-small {
+	max-width: $desctope-width-small;
+	margin: 0 auto;
+}
+
+.body {
+	width: 100%;
+	min-height: 100vh;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: min-content 1fr min-content; /*header main footer*/
 
 	&--scrolloff {
 		overflow: hidden;

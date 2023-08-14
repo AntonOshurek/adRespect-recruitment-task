@@ -1,5 +1,11 @@
+/* global styles */
 @import './global/global-styles';
-@import './variables/variables';
+@import './global/typography.scss';
+/* variables */
+@import './variables/width-variables.scss';
 @import './variables/colors.scss';
-@import './components/typography.scss';
 @import './variables/fonts.scss';
+/* components */
+@import './components/header.scss';
+@import './components/main.scss';
+@import './components/footer.scss';
