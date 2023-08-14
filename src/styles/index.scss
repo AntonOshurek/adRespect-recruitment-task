@@ -1,2 +1,16 @@
+/* global styles */
 @import './global/global-styles';
-@import './variables/variables';
+@import './global/typography.scss';
+/* variables */
+@import './variables/variables.scss';
+@import './variables/width-variables.scss';
+@import './variables/colors.scss';
+@import './variables/fonts.scss';
+/* components */
+@import './components/header.scss';
+@import './components/main.scss';
+@import './components/footer.scss';
+@import './components/nav/nav-btn.scss';
+@import './components/nav/nav.scss';
+@import './components/search.scss';
+@import './components/nav/nav-with-submenu.scss';

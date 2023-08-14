@@ -186,6 +186,7 @@ export const copy = (done) => {
 		[
 			`${paths.srcFontsFolder}/*.{woff2,woff}`,
 			`${srcFolder}/*.ico`,
+			`${srcFolder}/*.png`, //for custom favicon
 			`${srcFolder}/manifest.webmanifest`,
 		],
 		{

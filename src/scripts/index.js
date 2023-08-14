@@ -1,6 +1,5 @@
-import { testFunc } from "./utils/utils.js";
+import { mobileMenu } from "./components/mobile-menu.js";
 
 window.addEventListener('DOMContentLoaded', () => {
-	console.log('Hello from gulp :)');
-	testFunc();
+	mobileMenu();
 });
