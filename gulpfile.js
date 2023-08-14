@@ -50,10 +50,10 @@ export const styles = () => {
 	return src(paths.srcStyles)
 		.pipe(
 			plumber(
-				notify.onError({
-					title: "SCSS",
-					message: "Error: <%= error.message %>",
-				})
+				// notify.onError({
+				// 	title: "SCSS",
+				// 	message: "Error: <%= error.message %>",
+				// })
 			)
 		)
 		.pipe(sourcemap.init())
@@ -186,6 +186,7 @@ export const copy = (done) => {
 		[
 			`${paths.srcFontsFolder}/*.{woff2,woff}`,
 			`${srcFolder}/*.ico`,
+			`${srcFolder}/*.png`, //for custom favicon
 			`${srcFolder}/manifest.webmanifest`,
 		],
 		{
