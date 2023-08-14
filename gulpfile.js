@@ -50,10 +50,10 @@ export const styles = () => {
 	return src(paths.srcStyles)
 		.pipe(
 			plumber(
-				// notify.onError({
-				// 	title: "SCSS",
-				// 	message: "Error: <%= error.message %>",
-				// })
+				notify.onError({
+					title: "SCSS",
+					message: "Error: <%= error.message %>",
+				})
 			)
 		)
 		.pipe(sourcemap.init())
