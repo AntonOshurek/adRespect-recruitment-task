@@ -1,34 +1,28 @@
-@import '../variables/width-variables.scss';
+@import '../variables/width-variables';
 
 .search {
 	position: relative;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-
+	justify-content: space-between;
 	transition: all ease 0.4s;
 
-	&:hover,
-	&:focus-within {
-		& > .search__input {
-			opacity: 1;
-			width: 160px;
-		}
+	&:hover > .search__input,
+	&:focus-within > .search__input {
+		width: 160px;
+		opacity: 1;
 	}
 }
 
 .search__input {
-	height: 100%;
-	width: 0px;
-	pointer-events: 0;
-	opacity: 0;
-
-	padding: 5px 8px;
-
-	transition: all ease 0.6s;
-
 	border: 1px solid var(--dark);
 	border-radius: 5px;
+	padding: 5px 8px;
+	width: 0;
+	height: 100%;
+	opacity: 0;
+	transition: all ease 0.6s;
+	pointer-events: 0;
 
 	@media (max-width: $tablet-width) {
 		width: 160px;

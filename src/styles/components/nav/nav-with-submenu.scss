@@ -1,8 +1,8 @@
 .nav-with-submenu {
 	position: relative;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	gap: 5px;
 
 	&:hover,
@@ -16,11 +16,10 @@
 }
 
 .nav-with-submenu__button {
-	align-self: stretch;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-
+	align-self: stretch;
+	justify-content: center;
 	border: none;
 	background-color: transparent;
 }
@@ -33,22 +32,19 @@
 
 .nav-with-submenu__list {
 	position: absolute;
-	top: -100%;
 	left: 0;
-	opacity: 0;
-	pointer-events: none;
-
+	top: -100%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
-	gap: 5px;
-
-	padding: 10px 0;
-
-	background-color: var(--white);
-	transition: all ease 0.4s;
 	list-style: none;
+	padding: 10px 0;
+	background-color: var(--white);
+	opacity: 0;
+	transition: all ease 0.4s;
+	pointer-events: none;
+	gap: 5px;
 }
 
 .nav-with-submenu__item {
