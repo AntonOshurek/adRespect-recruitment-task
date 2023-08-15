@@ -1,26 +1,25 @@
 .header {
 	position: relative;
+	z-index: 2;
+	padding: 0 var(--standart-side-padding);
 	width: 100%;
 	background-color: var(--white);
-	padding: 0 var(--standart-side-padding);
-	z-index: 2;
 }
 
 .header__wrap {
 	display: grid;
-	grid-template-columns: max-content 1fr;
 	align-items: center;
-
+	grid-template-columns: max-content 1fr;
 	padding: 24px 0;
 }
 
 .header__title {
+	z-index: 1;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 	width: 115px;
 	height: 20px;
-	z-index: 1;
 }
 
 .header__logo-icon {

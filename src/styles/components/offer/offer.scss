@@ -1,0 +1,40 @@
+@import '../../variables/width-variables';
+
+.offer {
+	width: 100%;
+	background-color: var(--light);
+}
+
+.offer__wrap {
+	display: grid;
+	grid-row-gap: 96px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, max-content);
+	padding: 120px var(--standart-side-padding) 160px var(--standart-side-padding);
+}
+
+.offer__header {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding-left: 80px;
+
+	@media (max-width: $tablet-width) {
+		padding-left: 0;
+	}
+}
+
+.offer__title {
+	padding-bottom: 16px;
+	color: var(--green);
+}
+
+.offer__subtitle {
+	padding-bottom: 32px;
+	color: var(--dark);
+}
+
+.offer__additional-info {
+	color: var(--dark);
+}

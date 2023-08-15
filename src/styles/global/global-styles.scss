@@ -1,4 +1,4 @@
-@import '../variables/width-variables.scss';
+@import '../variables/width-variables';
 
 * {
 	margin: 0;
@@ -15,22 +15,21 @@
 }
 
 .container-medium {
-	max-width: $desctope-width-medium;
 	margin: 0 auto;
+	max-width: $desctope-width-medium;
 }
 
 .container-small {
-	max-width: $desctope-width-small;
 	margin: 0 auto;
+	max-width: $desctope-width-small;
 }
 
 .body {
-	width: 100%;
-	min-height: 100vh;
-
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: min-content 1fr min-content; /*header main footer*/
+	grid-template-rows: min-content 1fr min-content; /* header main footer */
+	width: 100%;
+	min-height: 100vh;
 
 	&--scrolloff {
 		overflow: hidden;
@@ -41,16 +40,13 @@
 
 		&::before {
 			content: '';
-			z-index: 1;
 			position: fixed;
+			z-index: 1;
 			width: 100%;
 			max-width: 100vw;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: rgba(255, 255, 255, 0.6);
+			background-color: rgb(255 255 255 / 60%);
 			cursor: pointer;
+			inset: 0;
 		}
 	}
 }

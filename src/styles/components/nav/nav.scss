@@ -1,10 +1,10 @@
-@import '../../variables/width-variables.scss';
+@import '../../variables/width-variables';
 
 .nav {
-	justify-self: flex-end;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	justify-self: flex-end;
 	gap: 48px;
 
 	@media (max-width: $tablet-width) {
@@ -12,69 +12,61 @@
 		left: 0;
 		right: 0;
 		top: -350%;
-
-		transition: all 0.5s ease-in;
-
 		flex-direction: column;
+		transition: all 0.5s ease-in;
 	}
+}
 
-	&--open {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
+.nav--open {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	justify-content: center;
+	padding: 40px 20px;
+	box-shadow: 0 0 10px rgb(000 000 000 / 60%);
+	background-color: var(--white);
+	transition: all 0.5s ease;
 
-		padding: 40px 20px;
-
-		transition: all 0.5s ease;
-		justify-content: center;
-		background-color: var(--white);
-		box-shadow: 0 0 10px rgba(000, 000, 000, 0.6);
-	}
-
-	&--open .nav__list {
-		pointer-events: all;
+	& .nav__list {
 		opacity: 1;
 		transition: all 0.5s ease;
+		pointer-events: all;
 	}
 
-	&--open .nav__search {
-		pointer-events: all;
+	& .nav__search {
 		opacity: 1;
 		transition: all 0.5s ease;
+		pointer-events: all;
 	}
 }
 
 .nav__list {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	gap: 48px;
+	justify-content: space-between;
 	list-style: none;
+	gap: 48px;
 
 	@media (max-width: $tablet-width) {
 		flex-direction: column;
-		justify-content: flex-start;
 		align-items: center;
-
+		justify-content: flex-start;
 		width: 100%;
 		opacity: 0;
-		pointer-events: none;
 		transition: all 0.5s ease;
+		pointer-events: none;
 	}
 }
 
-.nav__item {
-}
-
 .nav__link {
-	color: var(--dark);
 	text-decoration: none;
+	color: var(--dark);
 }
 
 .nav__search {
 	@media (max-width: $tablet-width) {
-		pointer-events: none;
 		opacity: 0;
+		pointer-events: none;
 	}
 }

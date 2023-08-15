@@ -1,0 +1,30 @@
+@import '../../variables/width-variables';
+
+.copyright {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+
+	@media (max-width: $tablet-width) {
+		flex-direction: column;
+	}
+}
+
+.copyright__info {
+	color: var(--light);
+}
+
+.copyright__author {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-decoration: none;
+	color: var(--light);
+	gap: 16px;
+}
+
+.copyright__icon {
+	width: 113px;
+	height: 23px;
+}
