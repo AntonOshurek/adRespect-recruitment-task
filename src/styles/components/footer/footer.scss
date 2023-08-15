@@ -1,0 +1,12 @@
+.footer {
+	width: 100%;
+	padding: 80px var(--standart-side-padding);
+	background-color: var(--dark);
+}
+
+.footer__wrap {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, max-content);
+	grid-row-gap: 120px;
+}
