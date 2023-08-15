@@ -1,9 +1,9 @@
-@import '../../variables/width-variables.scss';
+@import '../../variables/width-variables';
 
 .copyright {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
 	gap: 20px;
 
 	@media (max-width: $tablet-width) {
@@ -16,12 +16,12 @@
 }
 
 .copyright__author {
-	color: var(--light);
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	gap: 16px;
+	justify-content: space-between;
 	text-decoration: none;
+	color: var(--light);
+	gap: 16px;
 }
 
 .copyright__icon {
