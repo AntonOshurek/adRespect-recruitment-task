@@ -3,6 +3,10 @@
 .contact-banner {
 	padding: 60px 0;
 	width: 100%;
+
+	@media (max-width: $tablet-width) {
+		padding: 0;
+	}
 }
 
 .contact-banner__wrap {
