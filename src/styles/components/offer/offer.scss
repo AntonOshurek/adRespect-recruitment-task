@@ -3,6 +3,7 @@
 .offer {
 	width: 100%;
 	background-color: var(--light);
+	padding: 120px var(--standart-side-padding) 160px var(--standart-side-padding);
 }
 
 .offer__wrap {
@@ -10,7 +11,6 @@
 	grid-row-gap: 96px;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(2, max-content);
-	padding: 120px var(--standart-side-padding) 160px var(--standart-side-padding);
 }
 
 .offer__header {
