@@ -123,15 +123,93 @@
 				<!-- Additional required wrapper -->
 				<div class="swiper-wrapper">
 					<!-- Slides -->
-					<div class="swiper-slide">Slide 1</div>
-					<div class="swiper-slide">Slide 2</div>
-					<div class="swiper-slide">Slide 3</div>
-					...
+					<div class="swiper-slide">
+						<article class="swiper-slide__item">
+							<div class="swiper-slide__info">
+								<h2 class="swiper-slide__title heading heading--large">
+									Nowoczesna<br> aranżacja<br>
+									Twojego ogrodu
+								</h2>
+								<p class="swiper-slide__text paragraph paragraph--large">
+									Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji.
+									Oferujemy kompleksowy zakres usługz indywidualnym podejściem do każdego projektu.
+								</p>
+
+								<div class="swiper-slide__item-controls">
+									<a class="swiper-slide__link paragraph paragraph--large" href="#">
+										Skontaktuj się z nami
+									</a>
+									<button class="swiper-slide__button paragraph paragraph--large" type="button">
+										Zobacz nasze realizacje
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z" fill="#1B5B31"/>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="swiper-slide__gallery">
+								<picture class="swiper-slide__image">
+									<source srcset="./images/banner_1.webp"
+										type="image/webp">
+									<img class="swiper-slide__image" width="400" height="500"
+										src="./images/banner_1.jpg"
+										alt="budynek retail parku, zieliony drzewa oraz spacerujące ludzie.">
+								</picture>
+							</div>
+						</article>
+					</div>
+
+					<div class="swiper-slide">
+						<article class="swiper-slide__item">
+							<div class="swiper-slide__info">
+								<h2 class="swiper-slide__title heading heading--large">
+									Nowoczesna<br> aranżacja<br>
+									Twojego ogrodu
+								</h2>
+								<p class="swiper-slide__text paragraph paragraph--large">
+									Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji.
+									Oferujemy kompleksowy zakres usługz indywidualnym podejściem do każdego projektu.
+								</p>
+
+								<div class="swiper-slide__item-controls">
+									<a class="swiper-slide__link paragraph paragraph--large" href="#">
+										Skontaktuj się z nami
+									</a>
+									<button class="swiper-slide__button paragraph paragraph--large" type="button">
+										Zobacz nasze realizacje
+										<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z" fill="#1B5B31"/>
+										</svg>
+									</button>
+								</div>
+							</div>
+							<div class="swiper-slide__gallery">
+								<picture class="swiper-slide__image">
+									<source srcset="./images/banner_1.webp"
+										type="image/webp">
+									<img class="swiper-slide__image" width="400" height="500"
+										src="./images/banner_1.jpg"
+										alt="budynek retail parku, zieliony drzewa oraz spacerujące ludzie.">
+								</picture>
+							</div>
+						</article>
+					</div>
 				</div>
 
 				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+				<div class="swiper-controls">
+					<div class="swiper-button-prev swiper-controls__btn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24" fill="none">
+							<path d="M0.795115 10.9393C0.209328 11.5251 0.209328 12.4749 0.795114 13.0607L10.3411 22.6066C10.9268 23.1924 11.8766 23.1924 12.4624 22.6066C13.0482 22.0208 13.0482 21.0711 12.4624 20.4853L3.97709 12L12.4624 3.51472C13.0482 2.92893 13.0482 1.97918 12.4624 1.3934C11.8766 0.80761 10.9268 0.80761 10.3411 1.3934L0.795115 10.9393ZM26.1442 10.5L1.85577 10.5L1.85577 13.5L26.1442 13.5L26.1442 10.5Z" fill="black"/>
+						</svg>
+					</div>
+					<div class="swiper-button-next swiper-controls__btn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24" fill="none">
+							<path d="M26.2049 13.0607C26.7907 12.4749 26.7907 11.5251 26.2049 10.9393L16.6589 1.3934C16.0732 0.807611 15.1234 0.807611 14.5376 1.3934C13.9518 1.97919 13.9518 2.92893 14.5376 3.51472L23.0229 12L14.5376 20.4853C13.9518 21.0711 13.9518 22.0208 14.5376 22.6066C15.1234 23.1924 16.0732 23.1924 16.6589 22.6066L26.2049 13.0607ZM0.855774 13.5H25.1442V10.5H0.855774V13.5Z" fill="black"/>
+						</svg>
+					</div>
+				</div>
+
 			</div>
 		</section>
 		<section class="offer">
@@ -356,6 +434,7 @@
 			autoplay: false,
 			effect: "slide",
 			mousewheelControl: 1,
+			slidesPerView: 1,
 
 			navigation: {
 				nextEl: '.swiper-button-next',
