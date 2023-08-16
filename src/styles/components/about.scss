@@ -1,13 +1,23 @@
 @import '../variables/width-variables';
 
 .about {
+	padding-right: 20px;
+	width: 100%;
+	background-color: var(--green);
+
+	@media (max-width: $tablet-width) {
+		padding-right: 0;
+	}
+}
+
+.about__wrap {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
 	background-color: var(--green);
 
 	@media (min-width: $desctope-width-medium) {
-		grid-template-columns: 1fr calc($desctope-width-medium / 2) calc($desctope-width-medium / 2) 1fr;
+		grid-template-columns: 1fr calc($desctope-width-medium / 2) calc(($desctope-width-medium / 2) + 20px) 1fr;
 		grid-template-rows: 740px;
 	}
 
@@ -24,14 +34,16 @@
 	justify-content: center;
 	grid-column: 2/3;
 	grid-row: 1/-1;
-	padding: var(--standart-side-padding) var(--standart-side-padding) var(--standart-side-padding) 160px;
+	padding: 135px 0 135px 160px;
+
+	// var(--standart-side-padding)
 
 	@media (min-width: $desctope-width-medium) {
 		grid-column: 3/4;
 	}
 
 	@media (max-width: $tablet-width) {
-		padding-left: var(--standart-side-padding);
+		padding: 40px var(--standart-side-padding) 40px var(--standart-side-padding) ;
 	}
 }
 
