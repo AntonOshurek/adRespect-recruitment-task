@@ -4,6 +4,7 @@ const projectsGallery = () => {
   const projectGallery = document.querySelector('.projects__list');
 	const showMoreButton = document.querySelector('.projects__show-more-btn');
 	const projectsBlock = document.querySelector('.projects');
+	const galleryWrap = document.querySelector('.projects__gallery-wrap');
 
   // eslint-disable-next-line no-unused-vars
   const masonry = new Masonry(projectGallery, {
@@ -16,7 +17,9 @@ const projectsGallery = () => {
 	const showAllImages = () => {
 		showMoreButton.removeEventListener('click', showAllImages);
 		showMoreButton.classList.add('projects__show-more-btn--hidden');
+
 		projectsBlock.classList.add('projects--without-gradient');
+		galleryWrap.style.maxHeight = projectGallery.scrollHeight + 'px';
 	};
 
 	showMoreButton.addEventListener('click', showAllImages);
