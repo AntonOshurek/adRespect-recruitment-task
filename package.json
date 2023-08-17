@@ -52,5 +52,8 @@
     "stylelint-order": "^6.0.3",
     "webpack": "^5.88.2",
     "webpack-stream": "^7.0.0"
-  }
+  },
+	"dependencies": {
+		"masonry-layout": "^4.2.2"
+	}
 }

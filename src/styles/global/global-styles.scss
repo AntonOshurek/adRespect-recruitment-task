@@ -18,6 +18,11 @@ html {
 	clip: rect(0 0 0 0);
 }
 
+.container-large {
+	margin: 0 auto;
+	max-width: $desctope-width-large;
+}
+
 .container-medium {
 	margin: 0 auto;
 	max-width: $desctope-width-medium;
