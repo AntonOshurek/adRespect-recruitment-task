@@ -53,7 +53,8 @@
     "webpack": "^5.88.2",
     "webpack-stream": "^7.0.0"
   },
-	"dependencies": {
-		"masonry-layout": "^4.2.2"
-	}
+  "dependencies": {
+    "baguettebox.js": "^1.11.1",
+    "masonry-layout": "^4.2.2"
+  }
 }
