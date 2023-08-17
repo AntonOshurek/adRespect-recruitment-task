@@ -1,0 +1,24 @@
+.projects {
+	background-color: var(--tumbleweed);
+	padding: 120px var(--standart-side-padding) var(--standart-side-padding) var(--standart-side-padding);
+}
+
+.projects__header {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.projects__title {
+	color: var(--dark);
+}
+
+.projects__subtitle {
+	color: var(--green);
+}
+
+.projects__gallery {
+
+}
