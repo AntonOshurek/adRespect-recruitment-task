@@ -3,9 +3,9 @@
 	display: grid;
 	grid-row-gap: 96px;
 	grid-template-columns: 1fr;
+	overflow: hidden;
 	padding: 120px 0 0;
 	background-color: var(--tumbleweed);
-	overflow: hidden;
 	transition: all ease 1s;
 
 	&::after {
@@ -51,18 +51,18 @@
 }
 
 .projects__gallery-wrap {
-	transition: all ease 1s;
 	max-height: 1500px;
+	transition: all ease 1s;
 }
 
 .projects__list {
-	min-height: 0;
   display: grid;
 	align-items: center;
 	justify-items: center;
   grid-template-columns: repeat(3, minmax(0, 461px));
 	list-style: none;
 	width: 100%;
+	min-height: 0;
   gap: 43px;
 }
 
