@@ -5,7 +5,7 @@
 # adRespect-recruitment-task
 
 recruitment task special for ***[:point_right: adRespect](https://adrespect.pl/):bank:***
-***[:point_right: project design in Figma]([https://adrespect.pl/](https://www.figma.com/file/nwTC1VLqZuQ8qLllaPOgYu/Zadanie-rekrutacyjne-2023?type=design&node-id=0-1&mode=design&t=Wsq4JE8ut6gARjQt-0)):bank:***
+***[:point_right: project design in Figma](https://www.figma.com/file/nwTC1VLqZuQ8qLllaPOgYu/Zadanie-rekrutacyjne-2023?type=design&node-id=0-1&mode=design&t=Wsq4JE8ut6gARjQt-0):bank:***
 
 ***[:point_right: Gh-Pages Here](https://antonoshurek.github.io/adRespect-recruitment-task/):bank:***
 
