@@ -1,8 +1,10 @@
-![commits](https://img.shields.io/github/last-commit/AntonOshurek/adRespect-recruitment-taskstyle=plastic)
+![commits](https://img.shields.io/github/last-commit/AntonOshurek/adRespect-recruitment-task/style=plastic)
 ![lang](https://img.shields.io/github/languages/top/AntonOshurek/adRespect-recruitment-task)
 
 
 # adRespect-recruitment-task
+
+recruitment task special for ***[:point_right: adRespect](https://adrespect.pl/):bank:***
 
 ***[:point_right: Gh-Pages Here](https://antonoshurek.github.io/adRespect-recruitment-task/):bank:***
 
