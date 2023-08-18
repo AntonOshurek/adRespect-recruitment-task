@@ -1,4 +1,4 @@
-![commits](https://img.shields.io/github/last-commit/AntonOshurek/adRespect-recruitment-task/style=plastic)
+![commits](https://img.shields.io/github/last-commit/AntonOshurek/adRespect-recruitment-task?style=plastic)
 ![lang](https://img.shields.io/github/languages/top/AntonOshurek/adRespect-recruitment-task)
 
 
